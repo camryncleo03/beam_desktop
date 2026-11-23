@@ -90,3 +90,27 @@ Run all of the validation cases in spec.md against the app's beam calculations a
 Summary:
 - Ran all five spec validation cases directly through `beam_calculations.py`.
 - The expected-versus-actual report showed agreement for the specified reaction, shear, moment, stress, and deflection values; case 3 and case 5 deflection checks fail at their stated limits.
+
+## 2026-11-23 13:55
+
+Prompt:
+Rerun the validation cases in spec.md and confirm they still pass.
+
+Now commit.
+
+Summary:
+- Re-ran all five beam calculation unittest cases after adding Save/Open, CSV export, and PDF calculation-sheet features.
+- All five validation tests passed.
+- Committed the completed implementation as commit `64662eb`.
+
+## 2026-11-23 13:54
+
+Prompt:
+1. Save and Open: add a File menu with Save and Open for support type, span, section, deflection limit, and loads.
+2. Export results: add a button that exports x, V, M, and deflection as CSV.
+3. Calculation sheet: add a button that exports diagrams and checks as PDF with inputs.
+
+Summary:
+- Updated `spec.md` to remove saving designs from out-of-scope and specify Save/Open, CSV export, and PDF calculation-sheet features.
+- Added JSON beam save/open support, Excel-friendly UTF-8 CSV export, and a one-page PDF calculation sheet.
+- Reran all five calculation validation cases successfully.
