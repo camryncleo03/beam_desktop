@@ -114,3 +114,11 @@ Summary:
 - Updated `spec.md` to remove saving designs from out-of-scope and specify Save/Open, CSV export, and PDF calculation-sheet features.
 - Added JSON beam save/open support, Excel-friendly UTF-8 CSV export, and a one-page PDF calculation sheet.
 - Reran all five calculation validation cases successfully.
+
+## 2026-11-23 13:56
+
+Prompt:
+Write a short README.md that says what this app does, which packages to install, and the command that starts it.
+
+Summary:
+- Updated `README.md` with a concise app description, NumPy and Matplotlib installation command, Tkinter note, and `python app.py` start command.
