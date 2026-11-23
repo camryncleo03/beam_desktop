@@ -160,7 +160,7 @@ sizing a floor beam or deck joist.
    end (PL^3/3EI); L/360 = 0.333 in, so deflection fails.
 4. Simply supported 12 ft 2x10 joist, uniform 0.05 kip/ft: max moment
    0.90 kip-ft; fb = 0.505 ksi; max deflection 0.147 in; both pass.
-   5. Simply supported, 30 ft, W18x35, uniform 2 kips/ft from 0 to 15 ft
+5. Simply supported, 30 ft, W18x35, uniform 2 kips/ft from 0 to 15 ft
    only: reactions 22.5 k (left) and 7.5 k (right); max moment
    126.6 kip-ft at 11.25 ft.
 
