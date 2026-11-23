@@ -22,7 +22,7 @@ sizing a floor beam or deck joist.
   - Options: Simply Supported (default) or Cantilever (fixed at the left end).
 - Span
   - Units: ft.
-  - Range: 4 to 40 ft.
+  - Range: 4 to 20 ft.
   - Default: 20 ft.
   - Controls: a slider and a number box that stay in sync.
   - Slider step: 1 ft.
@@ -133,6 +133,12 @@ sizing a floor beam or deck joist.
   red over 100%), and PASS or FAIL.
 - A line suggesting the lightest passing section, with a button to use it.
 - Everything updates immediately whenever any input changes.
+- A File menu provides Save and Open for beam-design files containing support
+  type, span, material, section, deflection limit, waste factor, and loads.
+- An Export Results button saves x, V, M, and deflection values as a CSV
+  table suitable for opening in Excel.
+- A Calculation Sheet button saves a PDF containing the inputs, beam diagrams,
+  calculation checks, reactions, and recommended section, ready for submission.
 
 ## Look and feel
 - Opens with an example already loaded (20 ft simply supported W12x26

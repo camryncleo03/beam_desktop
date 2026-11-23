@@ -26,3 +26,67 @@ Read spec.md. I want to build this app as the Python Tkinter desktop app describ
 Summary:
 - No application code was changed; the task was to produce an implementation plan before coding.
 - Reviewed the complete spec and planned a Tkinter app with separate calculation and testing modules.
+
+## 2026-11-23 13:35
+
+Prompt:
+Build the app following your plan and spec.md.
+
+Summary:
+- Created `beam_calculations.py`, `app.py`, `test_beam_calculations.py`, `requirements.txt`, and `README.md`.
+- Implemented simply supported and cantilever reactions, shear, moment, deflection, section checks, section recommendations, live Tkinter controls, Matplotlib beam and diagram plots, check cards, and point-load dragging.
+- Fixed and retested the partial-uniform-load moment calculation until all five validation cases passed.
+- Verified `app.py` starts and shows the "Beam Designer" window.
+
+## 2026-11-23 13:43
+
+Prompt:
+Have the website only have one box for the sliders for the sliding bars. Run all of the validation cases in spec.md against the app's beam calculations and report a table of expected versus actual values.
+
+Summary:
+- Replaced the span slider's spinner control with a single synchronized entry box, while keeping the waste-factor control as a readout without an editable box.
+- Ran all five beam-validation cases against `beam_calculations.py` and will report expected versus actual values.
+
+## 2026-11-23 13:47
+
+Prompt:
+Everything doesn't look good. Make sure to change these: the span and waste factor sliding bar needs to be one square instead of two. Make sure the span goes across evenly. Make sure steel is only listed once for the material.
+
+Summary:
+- Simplified the span and waste-factor rows to single full-width sliders, removing separate boxes/readouts.
+- Corrected the span slider so it spans evenly across the available panel width.
+- Removed the duplicate "Steel" entry from the material OptionMenu.
+
+## 2026-11-23 13:49
+
+Prompt:
+Only have the span go up to 20.
+
+Summary:
+- Limited the span scale maximum and runtime span validation to 20 ft.
+
+## 2026-11-23 13:49
+
+Prompt:
+The span and waste factor sliding bars need to be one square instead of two. Make sure the span goes across evenly. Make sure steel is only listed once for the material.
+
+Summary:
+- Removed Tk Scale value labels and fixed widths so the span and waste-factor controls are single full-width slider tracks.
+- Kept only one Steel option in the material menu and limited the span control to 4–20 ft.
+
+## 2026-11-23 13:51
+
+Prompt:
+Show the number value of the span and waste factor of the sliders.
+
+Summary:
+- Enabled Tk Scale value labels so both the span and waste-factor sliders display their numeric values.
+
+## 2026-11-23 13:52
+
+Prompt:
+Run all of the validation cases in spec.md against the app's beam calculations and report a table of expected versus actual values.
+
+Summary:
+- Ran all five spec validation cases directly through `beam_calculations.py`.
+- The expected-versus-actual report showed agreement for the specified reaction, shear, moment, stress, and deflection values; case 3 and case 5 deflection checks fail at their stated limits.
